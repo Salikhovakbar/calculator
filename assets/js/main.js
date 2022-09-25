@@ -16,6 +16,14 @@ const plus = document.getElementById("plus");
 const delete1 = document.getElementById("delete");
 const divide = document.getElementById("divided");
 const equale = document.getElementById("equale");
+const twice = document.getElementById("twice");
+const triple = document.getElementById("triple");
+const fourtimes = document.getElementById("four-times");
+const fivetimes = document.getElementById("five-times");
+const threetimes = document.getElementById("3times");
+const FourTimes = document.getElementById("4times");
+const besh = document.getElementById("5times");
+const apprx = document.getElementById("roughly");
 number1.addEventListener("click", () => {
     input.value +="1"
 })
@@ -47,7 +55,31 @@ number0.addEventListener("click", () => {
     input.value +="0"
 })
 quarter.addEventListener("click", () => {
-    input.value += input.value**2
+    input.value = input.value**2
+
+})
+threetimes.addEventListener("click", () => {
+    input.value = input.value**3
+
+})
+FourTimes.addEventListener("click", () => {
+    input.value = input.value**4
+
+})
+besh.addEventListener("click", () => {
+    input.value = input.value**5
+
+})
+twice.addEventListener("click", () => {
+    input.value = Math.sqrt(input.value)
+
+})
+triple.addEventListener("click", () => {
+    input.value = Math.cbrt(input.value)
+
+})
+fourtimes.addEventListener("click", () => {
+    input.value = input.value ** (1/4) 
 
 })
 plus.addEventListener("click", () => {
@@ -60,10 +92,17 @@ minus.addEventListener("click", () => {
     input.value +="-"
 })
 delete1.addEventListener("click", () => {
-    input.value =""
+    input.value ="";
 })
 divide.addEventListener("click", () => {
     input.value +="/"
+})
+fivetimes.addEventListener("click", () => {
+    input.value = input.value ** (1/5) 
+
+})
+apprx.addEventListener("click", () => {
+    input.value = Math.round(input.value);
 })
 equale.addEventListener("click", () => {
     input.value = eval(input.value)
